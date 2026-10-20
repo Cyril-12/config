@@ -1,0 +1,58 @@
+configuration {
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 10";
+}
+* {
+    bg: #282828;
+    fg: #ebdbb2;
+    accent: #a89984;
+    background-color: @bg;
+    text-color: @fg;
+}
+window {
+    width: 190px;
+    border: 1px;
+    border-color: @accent;
+    padding: 5px;
+}
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 2px;
+}
+inputbar {
+    children: [ prompt ];
+    padding: 2px;
+}
+listview {
+    lines: 6;
+    fixed-height: true;
+    spacing: 5px;
+    scrollbar: false;
+}
+element {
+    padding: 2px;
+}
+element selected {
+    background-color: #504945;
+}
+element {
+    border: 0px;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+element selected {
+    background-color: #504945;
+    text-color: #ebdbb2;
+    border: 0px;
+}
+inputbar {
+    enabled: false;
+}
+element-icon {
+    enabled: false;
+    size: 0px;
+}
+element-text {
+    expand: true;
+    vertical-align: 0.5;
+}
